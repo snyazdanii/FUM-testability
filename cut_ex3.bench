@@ -1,0 +1,23 @@
+INPUTS: A, B, C
+OUTPUTS: X, Y, Z
+
+d = and(A, B)
+e = not(d)
+f = not(B)
+g = and(e, f)
+h = and(B, d)
+i = or(g, h)
+j = not(d)
+k = not(i)
+l = and(j, k)
+m = and(d, i)
+n = or(m, l)
+X = nand(d, n)
+o = not(n)
+p = not(i)
+Y = or(o, p)
+q = and(n, f)
+r = and(o, B)
+s = or(q, r)
+Z = nand(s, i, C)
+

@@ -1,0 +1,8 @@
+gcc fault_table.c -o fault_table
+
+to see table:
+./fault_table test.test
+
+gcc process.c -o process  
+      
+./process fault_table.csv 
